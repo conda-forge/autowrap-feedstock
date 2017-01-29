@@ -11,6 +11,18 @@ Summary: Generates Python Extension modules from commented Cython CXD files
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/autowrap-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/autowrap-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/autowrap-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/autowrap-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/autowrap-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/autowrap-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/autowrap/badges/version.svg)](https://anaconda.org/conda-forge/autowrap)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/autowrap/badges/downloads.svg)](https://anaconda.org/conda-forge/autowrap)
+
 Installing autowrap
 ===================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `autowrap` available on your platf
 ```
 conda search autowrap --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/autowrap-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/autowrap-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/autowrap-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/autowrap-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/autowrap-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/autowrap-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/autowrap/badges/version.svg)](https://anaconda.org/conda-forge/autowrap)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/autowrap/badges/downloads.svg)](https://anaconda.org/conda-forge/autowrap)
 
 
 Updating autowrap-feedstock
