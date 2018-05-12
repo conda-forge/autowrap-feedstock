@@ -22,11 +22,11 @@ requirements:
     - toolchain
     - python
     - setuptools
-    - cython
+    - cython >=0.19
   run:
     - python
     - setuptools
-    - cython
+    - cython >=0.19
 
 test:
   imports:
