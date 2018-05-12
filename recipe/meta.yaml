@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - autowrap = autowrap.Main:main
@@ -22,11 +22,11 @@ requirements:
     - toolchain
     - python
     - setuptools
-    - cython ==0.21
+    - cython
   run:
     - python
     - setuptools
-    - cython ==0.21
+    - cython
 
 test:
   imports:
