@@ -14,14 +14,16 @@ Summary: Generates Python Extension modules from commented Cython CXD files
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/autowrap-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/autowrap-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/autowrap-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/autowrap-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/autowrap-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/autowrap-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/autowrap-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/autowrap-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/autowrap-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/autowrap-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/autowrap-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/autowrap-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/autowrap/badges/version.svg)](https://anaconda.org/conda-forge/autowrap)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/autowrap/badges/downloads.svg)](https://anaconda.org/conda-forge/autowrap)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-autowrap-green.svg)](https://anaconda.org/conda-forge/autowrap) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/autowrap.svg)](https://anaconda.org/conda-forge/autowrap) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/autowrap.svg)](https://anaconda.org/conda-forge/autowrap) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/autowrap.svg)](https://anaconda.org/conda-forge/autowrap) |
 
 Installing autowrap
 ===================
