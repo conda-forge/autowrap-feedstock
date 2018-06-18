@@ -19,7 +19,10 @@ build:
 
 requirements:
   build:
-    - toolchain
+    - {{ compiler('c') }}
+  host:
+    - {{ compiler('c') }}
+  host:
     - python
     - setuptools
     - cython >=0.19
