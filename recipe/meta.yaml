@@ -1,6 +1,6 @@
 {% set name = "autowrap" %}
-{% set version = "0.18.1" %}
-{% set sha256 = "dbea9bfbc4ec694e2e4d8c61451c5d17852dd2775950bdcae7f24e5dd1dee190" %}
+{% set version = "0.19.1" %}
+{% set sha256 = "558ee348b8a63847d99ba3889c4697cf0cc4183467b1b4f898e6dac4a42bc7c9" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - autowrap = autowrap.Main:main
