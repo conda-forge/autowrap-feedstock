@@ -13,17 +13,15 @@ source:
 
 build:
   number: 0
+  noarch: python
   script: {{ PYTHON }} -m pip install . --ignore-installed --no-deps -vv
   entry_points:
     - autowrap = autowrap.Main:main
 
 requirements:
-  build:
-    - {{ compiler('c') }}
   host:
     - python
     - pip
-    - cython >=0.19
   run:
     - python
     - cython >=0.19
