@@ -1,6 +1,6 @@
 {% set name = "autowrap" %}
-{% set version = "0.18.1" %}
-{% set sha256 = "dbea9bfbc4ec694e2e4d8c61451c5d17852dd2775950bdcae7f24e5dd1dee190" %}
+{% set version = "0.20.0" %}
+{% set sha256 = "805d91639fe45f897a9184e942aae9e53c6e8d16e65efba336c528fbd6853afd" %}
 
 package:
   name: {{ name|lower }}
@@ -12,21 +12,18 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  noarch: python
+  script: {{ PYTHON }} -m pip install . --ignore-installed --no-deps -vv
   entry_points:
     - autowrap = autowrap.Main:main
 
 requirements:
-  build:
-    - {{ compiler('c') }}
   host:
     - python
-    - setuptools
-    - cython >=0.19
+    - pip
   run:
     - python
-    - setuptools
     - cython >=0.19
 
 test:
@@ -40,8 +37,7 @@ about:
   home: https://github.com/uweschmitt/autowrap
   license: BSD-3-Clause
   license_family: BSD
-  # autowrap does not include its license file in the latest pypi release,
-  # but will in the next release.  (TODO for next release)
+  license_file: LICENSE
   summary: 'Generates Python Extension modules from commented Cython CXD files'
   dev_url: https://github.com/uweschmitt/autowrap
 
