@@ -12,9 +12,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . --ignore-installed --no-deps -vv
+  script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - autowrap = autowrap.Main:main
 
@@ -44,3 +44,5 @@ about:
 extra:
   recipe-maintainers:
     - aseyboldt
+    - synapticarbors
+    - jpfeuffer
