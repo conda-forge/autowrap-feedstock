@@ -1,6 +1,6 @@
 {% set name = "autowrap" %}
-{% set version = "0.20.0" %}
-{% set sha256 = "805d91639fe45f897a9184e942aae9e53c6e8d16e65efba336c528fbd6853afd" %}
+{% set version = "0.22.0" %}
+{% set sha256 = "62bfdbce71ebbb91ce3259571d870eb2d5506c4a70e97d88b63574d18b9b3ee9" %}
 
 package:
   name: {{ name|lower }}
@@ -38,7 +38,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Generates Python Extension modules from commented Cython CXD files'
+  summary: Generates Python Extension modules from commented Cython CXD files
   dev_url: https://github.com/uweschmitt/autowrap
 
 extra:

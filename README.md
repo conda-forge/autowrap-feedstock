@@ -5,7 +5,7 @@ Home: https://github.com/uweschmitt/autowrap
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Generates Python Extension modules from commented Cython CXD files
 
