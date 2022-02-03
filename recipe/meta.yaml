@@ -1,6 +1,6 @@
 {% set name = "autowrap" %}
-{% set version = "0.22.6" %}
-{% set sha256 = "f3f9bd34fc6916c72b94c1d4acd99132eafdb41de74cdbac401f584e9174720a" %}
+{% set version = "0.22.7" %}
+{% set sha256 = "a60dfff60b58a3d7c1b9c77e6f2263ec206c09a55602e629808a7d285e48e53d" %}
 
 package:
   name: {{ name|lower }}
