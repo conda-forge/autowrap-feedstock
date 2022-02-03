@@ -1,6 +1,6 @@
 {% set name = "autowrap" %}
-{% set version = "0.22.3" %}
-{% set sha256 = "0bb8ff6cffa21cff26a29b6e5c7aaeaea343bbc063fc3e8bd84550789a938b8e" %}
+{% set version = "0.22.7" %}
+{% set sha256 = "a60dfff60b58a3d7c1b9c77e6f2263ec206c09a55602e629808a7d285e48e53d" %}
 
 package:
   name: {{ name|lower }}
@@ -20,10 +20,10 @@ build:
 
 requirements:
   host:
-    - python >=2.7
+    - python >=3.6
     - pip
   run:
-    - python >=2.7
+    - python >=3.6
     - cython >=0.19
 
 test:
@@ -34,15 +34,16 @@ test:
     - autowrap --version
 
 about:
-  home: https://github.com/uweschmitt/autowrap
+  home: https://github.com/OpenMS/autowrap
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: Generates Python Extension modules from commented Cython CXD files
-  dev_url: https://github.com/uweschmitt/autowrap
+  dev_url: https://github.com/OpenMS/autowrap
 
 extra:
   recipe-maintainers:
     - aseyboldt
     - synapticarbors
     - jpfeuffer
+    - timosachsenberg
