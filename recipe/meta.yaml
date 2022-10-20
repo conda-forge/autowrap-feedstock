@@ -20,18 +20,22 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - cython >=0.19
+    - setuptools
 
 test:
   imports:
     - autowrap
     - autowrap.data_files
+  requires:
+    - pip
   commands:
     - autowrap --version
+    - pip check
 
 about:
   home: https://github.com/OpenMS/autowrap
