@@ -1,6 +1,6 @@
 context:
   name: autowrap
-  version: "0.23.0"
+  version: "0.24.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: aece8c06761c4c42c1d6e92925077614b389466f2db547cbdbd9037e5f39e569
+  sha256: 87353a2e0b23de30dbcc93a339f2e52149dc918cda83d8f715255ef537d0fd93
 
 build:
   number: 0
@@ -21,11 +21,11 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - setuptools
+    - setuptools >=77.03
     - pip
   run:
     - python >=${{ python_min }}
-    - cython >=0.19
+    - cython >=3.1
     - setuptools
 
 tests:
