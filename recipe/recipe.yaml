@@ -1,6 +1,6 @@
 context:
   name: autowrap
-  version: "0.26.4"
+  version: "0.27.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 00e2551426d5367ce2e7bfed08eaa31ea80b424ca2857c57ab828426c78b1dfc
+  sha256: 7f746e006a92409dd2cba04e033dd415ffe759ae5620a93a12ac734068430831
 
 build:
   number: 0
